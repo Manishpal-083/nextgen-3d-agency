@@ -28,8 +28,8 @@ const Contact = () => {
     <>
       <section id="contact" className="contact">
         <motion.h2
-          initial={{ opacity: 0, y: 30, filter: "blur(10px)" }}
-          whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+          initial={{ opacity: 0, y: 30,  }}
+          whileInView={{ opacity: 1, y: 0,  }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, type: "spring" }}
         >
@@ -39,8 +39,8 @@ const Contact = () => {
         <div className="contact-container">
           <motion.div 
             className="contact-info"
-            initial={{ opacity: 0, x: -30, filter: "blur(10px)" }}
-            whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
+            initial={{ opacity: 0, x: -30,  }}
+            whileInView={{ opacity: 1, x: 0,  }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
@@ -64,8 +64,8 @@ const Contact = () => {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 30, filter: "blur(10px)" }}
-            whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
+            initial={{ opacity: 0, x: 30,  }}
+            whileInView={{ opacity: 1, x: 0,  }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="glass contact-form-wrapper"
@@ -149,11 +149,11 @@ const Contact = () => {
                   href={link.id}
                   className="quick-link"
                   variants={{
-                    hidden: { opacity: 0, x: -20, filter: "blur(5px)" },
+                    hidden: { opacity: 0, x: -20,  },
                     visible: { 
                       opacity: 1, 
                       x: 0, 
-                      filter: "blur(0px)",
+                      
                       transition: { duration: 0.5, type: 'spring' } 
                     }
                   }}

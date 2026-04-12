@@ -12,6 +12,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, type: "spring", stiffness: 100 }}
+          style={{ willChange: "transform, opacity" }}
         >
           We Build <br />
           <span className="gradient-text">Premium 3D</span> <br />
@@ -22,6 +23,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
+          style={{ willChange: "transform, opacity" }}
         >
           Elevate your brand with NextGen Digital Services. We combine stunning 3D visuals, immersive animations, and high-performance development.
         </motion.p>
@@ -31,6 +33,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
+          style={{ willChange: "transform, opacity" }}
         >
           <a className="btn-primary gradient-bg" href={`https://wa.me/91${PHONE_NUMBER}?text=${whatsappMessage}`} target="_blank" rel="noopener noreferrer">
             Start a Project

@@ -2,21 +2,21 @@ import { motion } from "framer-motion"
 
 const About = () => {
   const textVariants = {
-    hidden: { opacity: 0, y: 50, filter: "blur(10px)" },
+    hidden: { opacity: 0, y: 50,  },
     visible: { 
       opacity: 1, 
       y: 0, 
-      filter: "blur(0px)",
+      
       transition: { duration: 1, type: "spring", stiffness: 50 } 
     }
   }
 
   const statVariants = {
-    hidden: { opacity: 0, y: 30, filter: "blur(10px)" },
+    hidden: { opacity: 0, y: 30,  },
     visible: (i) => ({
       opacity: 1, 
       y: 0,
-      filter: "blur(0px)",
+      
       transition: { duration: 0.8, delay: i * 0.2, type: "spring", stiffness: 50 }
     })
   }

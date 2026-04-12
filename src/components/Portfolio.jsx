@@ -99,8 +99,8 @@ const Portfolio = () => {
   return (
     <section className="portfolio" id="portfolio">
       <motion.h2
-        initial={{ opacity: 0, y: 30, filter: "blur(10px)" }}
-        whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+        initial={{ opacity: 0, y: 30,  }}
+        whileInView={{ opacity: 1, y: 0,  }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
@@ -108,8 +108,8 @@ const Portfolio = () => {
       </motion.h2>
       <motion.p
         className="portfolio-desc"
-        initial={{ opacity: 0, filter: "blur(10px)" }}
-        whileInView={{ opacity: 1, filter: "blur(0px)" }}
+        initial={{ opacity: 0,  }}
+        whileInView={{ opacity: 1,  }}
         viewport={{ once: true }}
         transition={{ delay: 0.2, duration: 0.8 }}
       >
