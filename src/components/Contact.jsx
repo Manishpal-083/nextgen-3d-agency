@@ -71,14 +71,22 @@ const Contact = () => {
             className="glass contact-form-wrapper"
           >
             <form className="contact-form" onSubmit={handleSubmit}>
+              <label htmlFor="name" style={{ position: "absolute", width: "1px", height: "1px", padding: 0, margin: "-1px", overflow: "hidden", clip: "rect(0, 0, 0, 0)", whiteSpace: "nowrap", borderWidth: 0 }}>Your Name</label>
               <input 
+                id="name"
+                name="name"
+                autoComplete="name"
                 required
                 placeholder="Your Name"
                 value={form.name}
                 onChange={(e) => setForm({...form, name: e.target.value})}
               />
               
+              <label htmlFor="email" style={{ position: "absolute", width: "1px", height: "1px", padding: 0, margin: "-1px", overflow: "hidden", clip: "rect(0, 0, 0, 0)", whiteSpace: "nowrap", borderWidth: 0 }}>Your Email</label>
               <input 
+                id="email"
+                name="email"
+                autoComplete="email"
                 required
                 type="email"
                 placeholder="Your Email"
@@ -86,7 +94,11 @@ const Contact = () => {
                 onChange={(e) => setForm({...form, email: e.target.value})}
               />
               
+              <label htmlFor="phone" style={{ position: "absolute", width: "1px", height: "1px", padding: 0, margin: "-1px", overflow: "hidden", clip: "rect(0, 0, 0, 0)", whiteSpace: "nowrap", borderWidth: 0 }}>Phone Number</label>
               <input 
+                id="phone"
+                name="phone"
+                autoComplete="tel"
                 required
                 type="tel"
                 placeholder="Phone Number"
@@ -94,7 +106,10 @@ const Contact = () => {
                 onChange={(e) => setForm({...form, phone: e.target.value})}
               />
               
+              <label htmlFor="message" style={{ position: "absolute", width: "1px", height: "1px", padding: 0, margin: "-1px", overflow: "hidden", clip: "rect(0, 0, 0, 0)", whiteSpace: "nowrap", borderWidth: 0 }}>How can we help you?</label>
               <textarea
+                id="message"
+                name="message"
                 required
                 placeholder="How can we help you?"
                 value={form.message}
