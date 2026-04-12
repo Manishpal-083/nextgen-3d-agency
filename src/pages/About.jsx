@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import logo from "../assets/logo/Logo.png"
 import aboutImg from "../assets/logo/about.png"
 
 const pageVariants = {
@@ -45,7 +46,7 @@ const About = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <img src={aboutImg} alt="About NextGen World Map" />
+            <img src={logo} alt="About NextGen Logo" style={{ transform: "scale(2.5)", pointerEvents: "none" }} />
           </motion.div>
 
           <motion.div 

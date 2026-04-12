@@ -8,6 +8,7 @@ import Home from "./pages/Home"
 import About from "./pages/About"
 import Services from "./pages/Services"
 import Contact from "./pages/Contact"
+import FloatingActions from "./components/FloatingActions"
 
 function App() {
   const location = useLocation()
@@ -42,6 +43,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </AnimatePresence>
+      <FloatingActions />
       <Footer />
     </div>
   )
